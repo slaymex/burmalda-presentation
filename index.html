@@ -17,9 +17,26 @@
             font-family: 'Inter', system-ui, sans-serif;
         }
         
+        /* Новый тёмный «внутри океана» фон — глубокий синий с лучами света */
         .hero-bg {
-            background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); 
+            background: linear-gradient(135deg, rgba(0, 12, 28, 0.92) 0%, rgba(0, 22, 45, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5'); 
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .story-bg {
+            background: linear-gradient(135deg, rgba(0, 12, 28, 0.92) 0%, rgba(0, 22, 45, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1582966767752-2c0e2f1a0e0f'); 
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .fact-bg {
+            background: linear-gradient(135deg, rgba(0, 12, 28, 0.92) 0%, rgba(0, 22, 45, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5'); 
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
@@ -27,22 +44,6 @@
         
         .section {
             scroll-snap-align: start;
-        }
-        
-        .story-bg {
-            background: linear-gradient(135deg, #002b4f 0%, #001f3f 100%);
-            background-image: url('https://images.unsplash.com/photo-1582966767752-2c0e2f1a0e0f'); 
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
-        }
-        
-        .fact-bg {
-            background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
         }
         
         .fact-card {
@@ -67,7 +68,6 @@
             font-size: 3.2rem;
         }
         
-        /* Улучшенная читаемость фактов */
         .fact-text {
             color: #ffffff !important;
         }
@@ -133,13 +133,13 @@
                 </div>
                 
                 <div class="text-cyan-200 flex items-center gap-8 text-lg">
-                    <div>Реалистичный океан на фоне</div>
+                    <div>Глубокий океан вокруг тебя</div>
                     <div class="h-4 w-px bg-white/30"></div>
                     <div>Твои фото • По сюжету</div>
                 </div>
             </div>
             
-            <!-- НОВАЯ ОБЩАЯ ФОТО АКУЛЫ (не повторяет jogging) -->
+            <!-- НОВАЯ ОБЩАЯ ФОТО АКУЛЫ -->
             <div class="relative">
                 <img src="hero.jpg" 
                      alt="Реалистичная большая акула в океане"
@@ -153,7 +153,7 @@
             </div>
         </div>
         
-        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#001f3f] to-transparent pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#00122c] to-transparent pointer-events-none"></div>
     </section>
 
     <!-- СКАЗКА — КАДР ЗА КАДРОМ -->
@@ -219,7 +219,7 @@
         </div>
     </section>
 
-    <!-- ФАКТЫ — ШРИФТ СДЕЛАН ТЁМНЫМ / БЕЛЫМ ДЛЯ ЧИТАБЕЛЬНОСТИ -->
+    <!-- ФАКТЫ -->
     <section id="facts" class="section fact-bg min-h-screen py-20">
         <div class="max-w-6xl mx-auto px-8">
             <h2 class="section-title text-center mb-6 font-bold text-white">Интересные биологические факты</h2>
@@ -255,8 +255,8 @@
         </div>
     </section>
 
-    <!-- ГАЛЕРЕЯ — ИСПОЛЬЗУЕМ ТВОИ 4 ФОТО (если хочешь другие — просто замени файлы на GitHub с теми же именами) -->
-    <section id="gallery" class="section min-h-screen bg-[#002b4f] py-20">
+    <!-- ГАЛЕРЕЯ -->
+    <section id="gallery" class="section min-h-screen bg-[#00122c] py-20">
         <div class="max-w-7xl mx-auto px-8">
             <h2 class="section-title text-center mb-16 font-bold text-white">Галерея — кадры из сказки</h2>
             
@@ -310,7 +310,7 @@
             }
         }
         
-        console.log('%c✅ Сайт обновлён! Имя — Бурмалда, факты тёмные, hero.jpg новая, фон океана', 'color:#00d4ff; font-size:20px; font-weight:bold');
+        console.log('%c✅ Сайт обновлён! Теперь ты внутри глубокого океана — фон стал значительно темнее и атмосфернее', 'color:#00d4ff; font-size:20px; font-weight:bold');
     </script>
 </body>
 </html>
