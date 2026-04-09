@@ -17,29 +17,17 @@
             font-family: 'Inter', system-ui, sans-serif;
         }
         
-        /* Новый тёмный «внутри океана» фон — глубокий синий с лучами света */
+        /* ПРОСТО ТЁМНЫЙ ОКЕАН — вода и темнота (без лучей, без кораллов, без сложных фото) */
         .hero-bg {
-            background: linear-gradient(135deg, rgba(0, 12, 28, 0.92) 0%, rgba(0, 22, 45, 0.95) 100%), 
-                        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5'); 
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
+            background: linear-gradient(135deg, #000811 0%, #001122 100%);
         }
         
         .story-bg {
-            background: linear-gradient(135deg, rgba(0, 12, 28, 0.92) 0%, rgba(0, 22, 45, 0.95) 100%), 
-                        url('https://images.unsplash.com/photo-1582966767752-2c0e2f1a0e0f'); 
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
+            background: linear-gradient(135deg, #000811 0%, #001122 100%);
         }
         
         .fact-bg {
-            background: linear-gradient(135deg, rgba(0, 12, 28, 0.92) 0%, rgba(0, 22, 45, 0.95) 100%), 
-                        url('https://images.unsplash.com/photo-1544551763-46a013bb70d5'); 
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: overlay;
+            background: linear-gradient(135deg, #000811 0%, #001122 100%);
         }
         
         .section {
@@ -106,7 +94,7 @@
         </div>
     </header>
 
-    <!-- HERO СЛАЙД — НОВАЯ ОБЩАЯ ФОТО АКУЛЫ -->
+    <!-- HERO СЛАЙД -->
     <section id="hero" class="section min-h-screen hero-bg flex items-center relative">
         <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full pt-20">
             <div class="space-y-8">
@@ -133,13 +121,12 @@
                 </div>
                 
                 <div class="text-cyan-200 flex items-center gap-8 text-lg">
-                    <div>Глубокий океан вокруг тебя</div>
+                    <div>Тёмный океан на фоне</div>
                     <div class="h-4 w-px bg-white/30"></div>
                     <div>Твои фото • По сюжету</div>
                 </div>
             </div>
             
-            <!-- НОВАЯ ОБЩАЯ ФОТО АКУЛЫ -->
             <div class="relative">
                 <img src="hero.jpg" 
                      alt="Реалистичная большая акула в океане"
@@ -153,10 +140,10 @@
             </div>
         </div>
         
-        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#00122c] to-transparent pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#000811] to-transparent pointer-events-none"></div>
     </section>
 
-    <!-- СКАЗКА — КАДР ЗА КАДРОМ -->
+    <!-- СКАЗКА -->
     <section id="story" class="section story-bg min-h-screen py-20">
         <div class="max-w-6xl mx-auto px-8">
             <h2 class="section-title text-center mb-16 font-bold flex items-center justify-center gap-5">
@@ -310,7 +297,7 @@
             }
         }
         
-        console.log('%c✅ Сайт обновлён! Теперь ты внутри глубокого океана — фон стал значительно темнее и атмосфернее', 'color:#00d4ff; font-size:20px; font-weight:bold');
+        console.log('%c✅ Готово! Фон теперь просто тёмный океан — чистая вода и темнота, без лишнего', 'color:#00d4ff; font-size:20px; font-weight:bold');
     </script>
 </body>
 </html>
