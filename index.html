@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Биологическая сказка: Приключения Акулёнка</title>
+    <title>Биологическая сказка: Приключения Бурмалды</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -19,7 +19,7 @@
         
         .hero-bg {
             background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Реалистичное дно океана + волны */
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); 
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
@@ -31,7 +31,7 @@
         
         .story-bg {
             background: linear-gradient(135deg, #002b4f 0%, #001f3f 100%);
-            background-image: url('https://images.unsplash.com/photo-1582966767752-2c0e2f1a0e0f'); /* Реалистичное подводное дно с кораллами */
+            background-image: url('https://images.unsplash.com/photo-1582966767752-2c0e2f1a0e0f'); 
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
@@ -43,15 +43,6 @@
             background-size: cover;
             background-position: center;
             background-blend-mode: overlay;
-        }
-        
-        .ocean-wave {
-            animation: wave 12s linear infinite;
-        }
-        
-        @keyframes wave {
-            0% { background-position: 0 0; }
-            100% { background-position: 2000px 0; }
         }
         
         .fact-card {
@@ -67,7 +58,6 @@
             backdrop-filter: blur(12px);
         }
         
-        /* Увеличенные шрифты для удобного чтения с проектора */
         .story-text {
             font-size: 1.35rem;
             line-height: 1.7;
@@ -75,6 +65,11 @@
         
         .section-title {
             font-size: 3.2rem;
+        }
+        
+        /* Улучшенная читаемость фактов */
+        .fact-text {
+            color: #ffffff !important;
         }
     </style>
 </head>
@@ -111,7 +106,7 @@
         </div>
     </header>
 
-    <!-- HERO СЛАЙД -->
+    <!-- HERO СЛАЙД — НОВАЯ ОБЩАЯ ФОТО АКУЛЫ -->
     <section id="hero" class="section min-h-screen hero-bg flex items-center relative">
         <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full pt-20">
             <div class="space-y-8">
@@ -122,7 +117,7 @@
                 
                 <h1 class="text-7xl font-bold leading-none tracking-tighter">
                     ПРИКЛЮЧЕНИЯ<br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">АКУЛЁНКА</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300">БУРМАЛДЫ</span>
                 </h1>
                 
                 <p class="text-3xl text-cyan-100 max-w-lg">
@@ -144,16 +139,16 @@
                 </div>
             </div>
             
-            <!-- Главная картинка — теперь jogging (акула на пробежке) -->
+            <!-- НОВАЯ ОБЩАЯ ФОТО АКУЛЫ (не повторяет jogging) -->
             <div class="relative">
-                <img src="jogging.jpg" 
-                     alt="Акулёнок на утренней пробежке"
+                <img src="hero.jpg" 
+                     alt="Реалистичная большая акула в океане"
                      class="rounded-3xl shadow-2xl shadow-cyan-500/60 w-full max-h-[680px] object-cover">
                 <div class="absolute bottom-8 left-8 bg-black/70 text-white px-6 py-4 rounded-3xl flex items-center gap-4 text-xl">
                     <i class="fa-solid fa-shark text-5xl"></i>
                     <div>
-                        <div class="font-bold">Акулёнок готов к приключениям</div>
-                        <div class="text-cyan-300">Реалистичный фон океана</div>
+                        <div class="font-bold">Бурмалда — герой сказки</div>
+                        <div class="text-cyan-300">Реалистичное фото акулы</div>
                     </div>
                 </div>
             </div>
@@ -162,7 +157,7 @@
         <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#001f3f] to-transparent pointer-events-none"></div>
     </section>
 
-    <!-- СКАЗКА — КАДР ЗА КАДРОМ (строго по твоему сюжету) -->
+    <!-- СКАЗКА — КАДР ЗА КАДРОМ -->
     <section id="story" class="section story-bg min-h-screen py-20">
         <div class="max-w-6xl mx-auto px-8">
             <h2 class="section-title text-center mb-16 font-bold flex items-center justify-center gap-5">
@@ -177,20 +172,20 @@
                         <i class="fa-solid fa-tooth"></i>
                         7:00 — Чистка зубов
                     </div>
-                    <p class="story-text">Жила-была в большом синем океане весёлая акула по имени Акулёнок. Каждое утро ровно в семь часов она просыпалась и тщательно чистила свои острые зубки специальной пастой из морских водорослей.</p>
+                    <p class="story-text">Жила-была в большом синем океане весёлая акула по имени <strong>Бурмалда</strong>. Каждое утро ровно в семь часов она просыпалась и тщательно чистила свои острые зубки специальной пастой из морских водорослей.</p>
                 </div>
-                <img src="teeth.jpg" alt="Акулёнок чистит зубы" class="rounded-3xl shadow-2xl w-full">
+                <img src="teeth.jpg" alt="Бурмалда чистит зубы" class="rounded-3xl shadow-2xl w-full">
             </div>
 
             <!-- Кадр 2: Пробежка -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-                <img src="jogging.jpg" alt="Акулёнок на пробежке" class="rounded-3xl shadow-2xl w-full order-2 lg:order-1">
+                <img src="jogging.jpg" alt="Бурмалда на пробежке" class="rounded-3xl shadow-2xl w-full order-2 lg:order-1">
                 <div class="space-y-6 order-1 lg:order-2">
                     <div class="text-cyan-400 text-2xl font-medium flex items-center gap-3">
                         <i class="fa-solid fa-person-running"></i>
                         Утренняя пробежка
                     </div>
-                    <p class="story-text">После чистки зубов Акулёнок отправлялась на бодрую утреннюю пробежку вдоль яркого кораллового рифа. Она плыла быстро и уверенно, наслаждаясь свежей океанской водой.</p>
+                    <p class="story-text">После чистки зубов <strong>Бурмалда</strong> отправлялась на бодрую утреннюю пробежку вдоль яркого кораллового рифа. Она плыла быстро и уверенно, наслаждаясь свежей океанской водой.</p>
                 </div>
             </div>
 
@@ -201,20 +196,20 @@
                         <i class="fa-solid fa-fish"></i>
                         Встреча с потерявшейся рыбкой
                     </div>
-                    <p class="story-text">Во время пробежки Акулёнок увидела маленькую рыбку-клоуна, которая потерялась и очень испугалась. «Не бойся меня! — улыбнулась Акулёнок. — Я не такая страшная, как кажусь. Давай я тебе помогу!»</p>
+                    <p class="story-text">Во время пробежки <strong>Бурмалда</strong> увидела маленькую рыбку-клоуна, которая потерялась и очень испугалась. «Не бойся меня! — улыбнулась Бурмалда. — Я не такая страшная, как кажусь. Давай я тебе помогу!»</p>
                 </div>
-                <img src="meeting.jpg" alt="Акулёнок встречает рыбку" class="rounded-3xl shadow-2xl w-full">
+                <img src="meeting.jpg" alt="Бурмалда встречает рыбку" class="rounded-3xl shadow-2xl w-full">
             </div>
 
             <!-- Кадр 4: Помощь и дружба -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <img src="helping.jpg" alt="Акулёнок помогает рыбке" class="rounded-3xl shadow-2xl w-full order-2 lg:order-1">
+                <img src="helping.jpg" alt="Бурмалда помогает рыбке" class="rounded-3xl shadow-2xl w-full order-2 lg:order-1">
                 <div class="space-y-6 order-1 lg:order-2">
                     <div class="text-cyan-400 text-2xl font-medium flex items-center gap-3">
                         <i class="fa-solid fa-hand-holding-heart"></i>
-                        Акулёнок помогает и находит дорогу домой
+                        Бурмалда помогает и находит дорогу домой
                     </div>
-                    <p class="story-text">Акулёнок включила свой супер-нюх, быстро нашла дорогу к семье рыбки и аккуратно проводила её домой. С тех пор они стали лучшими друзьями и вместе охраняли риф.</p>
+                    <p class="story-text"><strong>Бурмалда</strong> включила свой супер-нюх, быстро нашла дорогу к семье рыбки и аккуратно проводила её домой. С тех пор они стали лучшими друзьями и вместе охраняли риф.</p>
                     
                     <div class="bg-white/10 border border-cyan-400/40 rounded-3xl p-10 text-2xl italic text-center">
                         <strong class="text-cyan-300">Мораль сказки:</strong><br>
@@ -225,46 +220,46 @@
         </div>
     </section>
 
-    <!-- ФАКТЫ (оставил как было, но увеличил шрифты) -->
+    <!-- ФАКТЫ — ШРИФТ СДЕЛАН ТЁМНЫМ / БЕЛЫМ ДЛЯ ЧИТАБЕЛЬНОСТИ -->
     <section id="facts" class="section fact-bg min-h-screen py-20">
         <div class="max-w-6xl mx-auto px-8">
-            <h2 class="section-title text-center mb-6 font-bold">Интересные биологические факты</h2>
-            <p class="text-center text-cyan-300 text-2xl mb-16">Почему Акулёнок такой крутой в реальной жизни</p>
+            <h2 class="section-title text-center mb-6 font-bold text-white">Интересные биологические факты</h2>
+            <p class="text-center text-white text-2xl mb-16">Почему Бурмалда такой крутой в реальной жизни</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="fact-card bg-white/10 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400 text-xl">
-                    <i class="fa-solid fa-nose text-6xl text-cyan-400 mb-6"></i>
-                    <h3 class="text-3xl font-semibold mb-4">Супер-нюх</h3>
-                    <p class="text-cyan-100">Акулы чуют запах одной капли крови на расстоянии до <strong>1 километра</strong>!</p>
+                <div class="fact-card bg-white/20 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400">
+                    <i class="fa-solid fa-nose text-6xl text-cyan-300 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4 text-white">Супер-нюх</h3>
+                    <p class="fact-text text-xl">Акулы чуют запах одной капли крови на расстоянии до <strong>1 километра</strong>!</p>
                 </div>
-                <div class="fact-card bg-white/10 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400 text-xl">
-                    <i class="fa-solid fa-teeth text-6xl text-cyan-400 mb-6"></i>
-                    <h3 class="text-3xl font-semibold mb-4">Зубы-обновка</h3>
-                    <p class="text-cyan-100">За всю жизнь у акулы вырастает до <strong>30 000 зубов</strong>. Они постоянно меняются.</p>
+                <div class="fact-card bg-white/20 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400">
+                    <i class="fa-solid fa-teeth text-6xl text-cyan-300 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4 text-white">Зубы-обновка</h3>
+                    <p class="fact-text text-xl">За всю жизнь у акулы вырастает до <strong>30 000 зубов</strong>. Они постоянно меняются.</p>
                 </div>
-                <div class="fact-card bg-white/10 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400 text-xl">
-                    <i class="fa-solid fa-clock text-6xl text-cyan-400 mb-6"></i>
-                    <h3 class="text-3xl font-semibold mb-4">Древние жители</h3>
-                    <p class="text-cyan-100">Акулы живут на Земле уже <strong>более 400 миллионов лет</strong> — старше динозавров!</p>
+                <div class="fact-card bg-white/20 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400">
+                    <i class="fa-solid fa-clock text-6xl text-cyan-300 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4 text-white">Древние жители</h3>
+                    <p class="fact-text text-xl">Акулы живут на Земле уже <strong>более 400 миллионов лет</strong> — старше динозавров!</p>
                 </div>
-                <div class="fact-card bg-white/10 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400 text-xl">
-                    <i class="fa-solid fa-heart-pulse text-6xl text-cyan-400 mb-6"></i>
-                    <h3 class="text-3xl font-semibold mb-4">Полезные хищники</h3>
-                    <p class="text-cyan-100">Едят больных рыб и помогают сохранять здоровый баланс в океане.</p>
+                <div class="fact-card bg-white/20 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400">
+                    <i class="fa-solid fa-heart-pulse text-6xl text-cyan-300 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4 text-white">Полезные хищники</h3>
+                    <p class="fact-text text-xl">Едят больных рыб и помогают сохранять здоровый баланс в океане.</p>
                 </div>
-                <div class="fact-card bg-white/10 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400 text-xl">
-                    <i class="fa-solid fa-shield-halved text-6xl text-cyan-400 mb-6"></i>
-                    <h3 class="text-3xl font-semibold mb-4">Большинство не опасны</h3>
-                    <p class="text-cyan-100">Из 500 видов только 3–4 действительно опасны для человека.</p>
+                <div class="fact-card bg-white/20 border border-cyan-400/30 rounded-3xl p-8 hover:border-cyan-400">
+                    <i class="fa-solid fa-shield-halved text-6xl text-cyan-300 mb-6"></i>
+                    <h3 class="text-3xl font-semibold mb-4 text-white">Большинство не опасны</h3>
+                    <p class="fact-text text-xl">Из 500 видов только 3–4 действительно опасны для человека.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ГАЛЕРЕЯ (твои 4 картинки) -->
+    <!-- ГАЛЕРЕЯ — ИСПОЛЬЗУЕМ ТВОИ 4 ФОТО (если хочешь другие — просто замени файлы на GitHub с теми же именами) -->
     <section id="gallery" class="section min-h-screen bg-[#002b4f] py-20">
         <div class="max-w-7xl mx-auto px-8">
-            <h2 class="section-title text-center mb-16 font-bold">Галерея — кадры из сказки</h2>
+            <h2 class="section-title text-center mb-16 font-bold text-white">Галерея — кадры из сказки</h2>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div class="group relative rounded-3xl overflow-hidden">
@@ -288,7 +283,7 @@
                 <div class="group relative rounded-3xl overflow-hidden">
                     <img src="helping.jpg" alt="Помощь рыбке" class="w-full h-96 object-cover group-hover:scale-110 transition-transform">
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-8">
-                        <p class="text-2xl font-medium">Акулёнок помогает найти дорогу домой</p>
+                        <p class="text-2xl font-medium">Бурмалда помогает найти дорогу домой</p>
                     </div>
                 </div>
             </div>
@@ -299,8 +294,9 @@
     <footer class="bg-black/40 py-12">
         <div class="max-w-7xl mx-auto px-8 text-center text-cyan-300">
             <p class="text-2xl">Сайт-презентация готова для защиты в колледже</p>
-            <p class="text-lg mt-3">Реалистичный океан на фоне • Картинки строго по сюжету • Крупный шрифт</p>
-            <p class="text-sm text-white/50 mt-8">Сохрани как index.html и загрузи на GitHub Pages</p>
+            <p class="text-lg mt-3">Реалистичный океан • Имя изменено на Бурмалда • Факты теперь читаются • Герой — общая фото акулы</p>
+            <p class="text-sm text-white/60 mt-8">Загрузи свои 5 фото на GitHub:</p>
+            <p class="text-xs text-white/40">hero.jpg (общая акула) + teeth.jpg + jogging.jpg + meeting.jpg + helping.jpg</p>
         </div>
     </footer>
 
@@ -317,7 +313,7 @@
             }
         }
         
-        console.log('%c✅ Сайт обновлён! Реалистичный океан + твои 4 картинки по сюжету + крупный шрифт', 'color:#00d4ff; font-size:20px; font-weight:bold');
+        console.log('%c✅ Сайт обновлён! Имя — Бурмалда, факты тёмные, hero.jpg новая, фон океана', 'color:#00d4ff; font-size:20px; font-weight:bold');
     </script>
 </body>
 </html>
